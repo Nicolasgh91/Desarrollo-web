@@ -26,6 +26,9 @@
     margin: 40px 0 0 5px;
     padding: 0 5px;
 }
+ul{
+    list-style-type: none;
+}
 
 .internal-nav-links a {
     text-decoration: none; 
@@ -212,6 +215,9 @@ p{
 }
 
 @media (max-width: 790px) {
+    .text-box-container{
+        padding: 60px;
+    }
     .mid-image-path-5 {
         background-image: url('../assets/homer-tablet.jpeg');
         background-position: left;
@@ -227,6 +233,9 @@ p{
 }
 
 @media (max-width: 565px) {
+    .text-box-container{
+        padding: 30px;
+    }
     .mid-image-path-4 {
         background-image: url('../assets/better-call-saul-mobile.jpg');
     }
