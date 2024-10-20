@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --main-font-color: #2d7f50;
+    --second-font-color: #026236;
+    --third-color: rgb(47, 128, 45);
+    --left-container-color: #cef0e1;
+    --mid-bg-container: #cef0e1;
+    --right-bg-container: #b2cec4;
+}
+
+/*
+    font-family: "Rubik Dirt", system-ui;
+    font-style: normal;
+*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+.internal-nav{
+    margin: 40px 0 0 5px;
+    padding: 0 5px;
+}
+
+.internal-nav-links a {
+    text-decoration: none; 
+    color: rgb(116, 114, 17);
+    font-size: 0.9rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    margin: 20px 5px;
+}
+
+.internal-nav-links a:hover {
+    color: #808080; 
+}
+
+.left-container {
+    background-color: var(--left-container-color);
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    border-right: rgba(75, 31, 14, 0.479) 1px solid;
+}
+
+.mid-container {
+    width: 84%;
+    height: fit-content;
+    position: absolute;
+    left: 12%;
+    display: inline-block; 
+    color: var(--second-font-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+}
+
+.right-container {
+    width: 4%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    background-color: var(--right-bg-container);
+    right: 0;
+    border-left: rgba(75, 31, 14, 0.479) 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+
+}
+
+.text-box-container{
+    padding: 80px;
+}
+p{
+    line-height: 1.8rem;
+}
+
+/*
+.text-box-better-call-saul{
+    background-color: yellow;
+    color: red;
+}
+*/
+
+.anchor{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.main-title{
+    color: var(--main-font-color);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: left;
+}
+
+.tabulacion{
+    margin-left: 50px;
+}
+
+.author{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.more-info{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.more-info-link{
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+}
+
+.paragraphs {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.separator-line{
+    background-color: rgb(101, 123, 165);
+    width: 80%;
+
+    height: 2px;
+    border-top: 1px solid white;
+    margin: 60px auto 0 auto;
+}
+
+.mid-image {
+    background-color: black;
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: filter 0.3s ease;
+}
+
+.mid-image:hover{
+    filter: blur(2px);
+    cursor: pointer;
+}
+
+.subtitle {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.mid-image-path-1 {
+    background-image: url('../assets/stark-temporada-1.jpg');
+}
+.mid-image-path-2 {
+    background-image: url('../assets/the-office-desktop.jpg');
+    background-position: top;
+}
+.mid-image-path-3 {
+    background-image: url('../assets/breaking-bad.png');
+}
+.mid-image-path-4 {
+    background-image: url('../assets/better-call-saul-2.webp');
+}
+.mid-image-path-5 {
+    background-image: url('../assets/los-simpsons-desktop');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------  Media queries  ----------------  */
+
+@media (max-width: 999px) {
+    .mid-image-path-4 {
+        background-image: url('../assets/better-call-saul-tablet.jpg');
+    }
+
+}
+
+@media (max-width: 790px) {
+    .mid-image-path-5 {
+        background-image: url('../assets/homer-tablet.jpeg');
+        background-position: left;
+    }
+    .mid-image-path-2{
+        background-image: url('../assets/the-office-mobile.jpg');
+        background-position: top;
+    }
+
+    .internal-nav-links a{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 565px) {
+    .mid-image-path-4 {
+        background-image: url('../assets/better-call-saul-mobile.jpg');
+    }
+    .mid-image-path-5 {
+        background-image: url('../assets/los-simpsons-mobile.jpeg');   
+    }
+
+    .internal-nav-links a{
+        font-size: 0.5rem;
+    }
+}
