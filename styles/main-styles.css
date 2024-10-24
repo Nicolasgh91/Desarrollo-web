@@ -8,12 +8,23 @@
     --main-font-color: #2d7f50;
     --second-font-color: #026236;
     --third-color: rgb(47, 128, 45);
-    --left-container-color: #cef0e1;
-    --mid-bg-container: #cef0e1;
-    --right-bg-container: #b2cec4;
+    --left-container-color: #004F71;
+    --mid-bg-container: #F5F5F5;
+    --right-bg-container: #004F71;
+    --separator-color: #57615d77;
+    --internal-nav-links: #a5a31f;
 }
 
 /*
+#b2cec4;
+#F5F5F5 bg color
+#747211 original nav links color
+#AA0061
+        --mid-bg-container: #cef0e1;
+        --separator-color: #b2cec4;
+        #657ba5
+
+
     font-family: "Rubik Dirt", system-ui;
     font-style: normal;
 */
@@ -33,7 +44,7 @@ ul{
 
 .internal-nav-links a {
     text-decoration: none; 
-    color: rgb(116, 114, 17);
+    color: var(--internal-nav-links);
     font-size: 0.9rem;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
@@ -142,7 +153,7 @@ p{
 }
 
 .separator-line{
-    background-color: rgb(101, 123, 165);
+    background-color: var(--separator-color);
     width: 80%;
 
     height: 2px;
