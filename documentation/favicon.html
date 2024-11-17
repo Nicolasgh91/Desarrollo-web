@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Favicon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guía de Favicon</h1>
+    <p>Los favicons son pequeños íconos que aparecen en la pestaña del navegador y en la lista de marcadores. Aquí se presentan los formatos más populares y cómo implementarlos en tu sitio web.</p>
+
+    <h2>Formatos de Favicon</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Formato</th>
+                <th>Extensión</th>
+                <th>Tamaño Recomendado</th>
+                <th>Uso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ICO</td>
+                <td>.ico</td>
+                <td>16x16 px, 32x32 px, 48x48 px</td>
+                <td>Compatible con todos los navegadores.</td>
+            </tr>
+            <tr>
+                <td>PNG</td>
+                <td>.png</td>
+                <td>32x32 px, 96x96 px, 192x192 px</td>
+                <td>Soporta transparencia, recomendado para Android y Web App.</td>
+            </tr>
+            <tr>
+                <td>SVG</td>
+                <td>.svg</td>
+                <td>Variable</td>
+                <td>Usado para iconos escalables en aplicaciones modernas.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Implementación en HTML</h2>
+    <p>Para incluir los favicons en tu sitio web, agrega las siguientes líneas en la sección <code>&lt;head&gt;</code> de tu documento HTML:</p>
+
+    <h3>Ejemplo para Favicon ICO</h3>
+    <code>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code>
+
+    <h3>Ejemplo para Favicon PNG</h3>
+    <code>&lt;link rel="icon" href="favicon.png" type="image/png" sizes="32x32"&gt;</code>
+
+    <h3>Ejemplo para Favicon SVG</h3>
+    <code>&lt;link rel="icon" href="favicon.svg" type="image/svg+xml"&gt;</code>
+
+    <h2>Consejos</h2>
+    <ul>
+        <li>Usa un formato ICO como estándar para garantizar la compatibilidad en todos los navegadores.</li>
+        <li>Proporciona múltiples tamaños de favicon PNG para adaptarse a diferentes dispositivos y resoluciones.</li>
+        <li>Utiliza SVG para iconos escalables que se vean bien en cualquier tamaño.</li>
+    </ul>
+
+</body>
+</html>

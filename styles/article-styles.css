@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer";
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Main styles */
+
+/*
+<main class="main">
+<h1 class="main-heading">Whispers of the Willow Tree</h1>
+<p class="author">By<a href="#">Joan Smith</a></p>
+<p class="main-text">
+    Oliver and Ben spend a summer at their grandparents’ house in rural Texas. There, they stumble upon a
+    dusty old camera and decide to make a movie inspired by their grandpa’s stories. As they transform the
+    riverbank into a 1950s scene, they unravel the legend of a mysterious figure who fished by the river
+    decades…
+</p>
+<div class="tags-container">
+    <span class="tag">Mystery</span><span class="tag">Vacations</span><span class="tag">Wild</span>
+</div>
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aside {
+    grid-area: aside;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-areas:
+
+            "header"
+            "main"
+            "sidebar"
+            "aside"
+            "footer";
+
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* --------- Deploy https://nicolasgh91.github.io/Desarrollo-web/ */
+/* --------- Deployed https://nicolasgh91.github.io/Desarrollo-web/ */
 
 :root{
     --main-font-color: #2d7f50;
@@ -15,34 +15,19 @@
     --internal-nav-links: #a5a31f;
 }
 
-/*
-#b2cec4;
-#F5F5F5 bg color
-#747211 original nav links color
-#AA0061
-        --mid-bg-container: #cef0e1;
-        --separator-color: #b2cec4;
-        #657ba5
-
-
-    font-family: "Rubik Dirt", system-ui;
-    font-style: normal;
-*/
 * {
     box-sizing: border-box;
     margin: 0px;
 }
 
-
-.internal-nav{
+/* Nav */
+ul{
     margin: 40px 0 0 5px;
     padding: 0 5px;
-}
-ul{
     list-style-type: none;
 }
 
-.internal-nav-links a {
+nav ul li a{
     text-decoration: none; 
     color: var(--internal-nav-links);
     font-size: 0.9rem;
@@ -53,23 +38,26 @@ ul{
     margin: 20px 5px;
 }
 
-.internal-nav-links a:hover {
+nav ul li a:hover {
     color: #808080; 
 }
+
+
+/* Main containers, 3 sections */
 
 .left-container {
     background-color: var(--left-container-color);
     width: 12%;
     height: 100%;
     position: fixed;
-    display: inline-block;
+    left: 0;
     border-right: rgba(75, 31, 14, 0.479) 1px solid;
 }
 
 .mid-container {
     width: 84%;
     height: fit-content;
-    position: absolute;
+    position: relative;
     left: 12%;
     display: inline-block; 
     color: var(--second-font-color);
@@ -84,22 +72,18 @@ ul{
     right: 0;
     border-left: rgba(75, 31, 14, 0.479) 1px solid;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
-
 }
+
+
+/* Middle main container*/
 
 .text-box-container{
     padding: 80px;
 }
+
 p{
     line-height: 1.8rem;
 }
-
-/*
-.text-box-better-call-saul{
-    background-color: yellow;
-    color: red;
-}
-*/
 
 .anchor{
     margin: 20px 0;
@@ -133,7 +117,7 @@ p{
     margin: 20px 0;
 }
 
-.more-info-link{
+.more-info a{
     text-decoration: none;
     color: var(--main-font-color);
     font-family: "Kanit", sans-serif;
@@ -141,7 +125,7 @@ p{
     font-style: normal;
 }
 
-.more-info-link:hover {
+.more-info a:hover, .copyright a:hover{
     text-decoration: underline;
 }
 
@@ -155,26 +139,9 @@ p{
 .separator-line{
     background-color: var(--separator-color);
     width: 80%;
-
     height: 2px;
     border-top: 1px solid white;
     margin: 60px auto 0 auto;
-}
-
-.mid-image {
-    background-color: black;
-    height: 650px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    transition: filter 0.3s ease;
-}
-
-.mid-image:hover{
-    filter: blur(2px);
-    cursor: pointer;
 }
 
 .subtitle {
@@ -186,6 +153,10 @@ p{
     font-style: normal;
     margin: 10px 0;
 }
+
+
+
+/* Article images */
 
 .mid-image-path-1 {
     background-image: url('../assets/stark-temporada-1.jpg');
@@ -204,9 +175,34 @@ p{
     background-image: url('../assets/los-simpsons-desktop');
 }
 
+.mid-image {
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: filter 0.3s ease;
+}
 
+.mid-image:hover{
+    filter: blur(2px);
+    cursor: pointer;
+}
 
+/* Footer section */
 
+.copyright{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: var(--main-font-color);
+}
 
 
 
@@ -219,10 +215,7 @@ p{
 /*----------------  Media queries  ----------------  */
 
 @media (max-width: 999px) {
-    .mid-image-path-4 {
-        background-image: url('../assets/better-call-saul-tablet.jpg');
-    }
-
+    .mid-image-path-4 {background-image: url('../assets/better-call-saul-tablet.jpg')}
 }
 
 @media (max-width: 790px) {
@@ -231,14 +224,12 @@ p{
     }
     .mid-image-path-5 {
         background-image: url('../assets/homer-tablet.jpeg');
-        background-position: left;
     }
     .mid-image-path-2{
         background-image: url('../assets/the-office-mobile.jpg');
-        background-position: top;
     }
 
-    .internal-nav-links a{
+    nav ul li a{
         font-size: 0.7rem;
     }
 }
@@ -250,11 +241,41 @@ p{
     .mid-image-path-4 {
         background-image: url('../assets/better-call-saul-mobile.jpg');
     }
+
     .mid-image-path-5 {
         background-image: url('../assets/los-simpsons-mobile.jpeg');   
     }
 
-    .internal-nav-links a{
+    nav ul li a{
         font-size: 0.5rem;
     }
+
+    .main-title{
+        font-size: 1.5rem;
+    }
+    .mid-image-path-4, .mid-image-path-2, .mid-image-path-5 {
+            height: 27em;
+            background-size: contain;
+            background-position: top;
+    }
+
+    .copyright{
+        font-size: 0.7em;
+    }
+
+    .left-container{
+        width: 20%;
+    }
+    
+    .mid-container{
+        width: 76%;
+        left: 20%;
+        }
+    
+    .right-container{
+        width: 4%;
+    }
+
+
+
 }

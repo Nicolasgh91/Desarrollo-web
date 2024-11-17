@@ -10,33 +10,29 @@
 
 
 <body>
-    <!-- Left container 70% viewport width -->
-    <div class="left-container">
-
-        <ul class="internal-nav">
-            <li class="internal-nav-links"><a href="#better-call-saul">Better Call Saul</a></li>
-            <li class="internal-nav-links"><a href="#game-of-thrones">Game of Thrones</a></li>
-            <li class="internal-nav-links"><a href="#los-simpsons">Los Simpsons</a></li>
-            <li class="internal-nav-links"><a href="#the-office">The Office</a></li>
-            <li class="internal-nav-links"><a href="#breaking-bad">Breaking Bad</a></li>
+    <!-- Left container 30% viewport width -->
+    <nav class="left-container">
+        <ul>
+            <li><a href="#better-call-saul">Better Call Saul</a></li>
+            <li><a href="#game-of-thrones">Game of Thrones</a></li>
+            <li><a href="#los-simpsons">Los Simpsons</a></li>
+            <li><a href="#the-office">The Office</a></li>
+            <li><a href="#breaking-bad">Breaking Bad</a></li>
         </ul>
-
-
-    </div><!-- 
+    </nav><!-- 
         -->
 
 
     <!-- Middle container 70% viewport width -->
-    <div class="mid-container">
+    <main class="mid-container">
 
         <!-- Init of first box -->
-        <div class="full-card">
-
-            <div class="mid-image mid-image-path-4" id="better-call-saul">
-            </div>
+        <article>
+            <area class="mid-image mid-image-path-4" id="better-call-saul" href="./articles/article.html"></area>
+            
             <div class="text-box-container text-box-better-call-saul">
                 <span class="anchor">Better Call Saul</span>
-                <h1 class="main-title">Better Call Saul: El Camino hacia Saul Goodman</h1>
+                <h1 class="main-title">Better Call Saul: El camino hacia Saul Goodman</h1>
                 <span class="author">Creado por Vince Gilligan y Peter Gould</span>
                 <p class="paragraphs"><span class="tabulacion"> </span> Better Call Saul es una serie de televisión
                     estadounidense que funciona como precuela y secuela de la aclamada serie Breaking Bad. Creada por
@@ -60,153 +56,157 @@
                     personajes y a los eventos que ocurrieron antes y después de la historia principal.
                 </p>
 
-
-
-                <span class="more-info"><a class="more-info-link" href="#">Vea la historia completa</a></span>
+                <span class="more-info"><a onmouseover="activeTextColor()" onmouseout="inactiveTextColor()" class="hover-animation" href="./articles/article.html">Vea la historia
+                        completa</a></span>
                 <div class="separator-line"></div>
             </div>
 
-
-        </div>
+        </article>
         <!-- End of first box -->
-        <div class="mid-image mid-image-path-1" id="game-of-thrones">
-        </div>
 
-        <div class="text-box-container">
-            <span class="anchor">GOT</span>
-            <h1 class="main-title">Game of Thrones: Un Trono de Hierro y Muchas Intrigas</h1>
-            <span class="author">Creado por David Beniof</span>
-            <p class="paragraphs"><span class="tabulacion"> </span> Game of Thrones es una serie de fantasía épica
-                basada en la saga de libros "Canción de hielo y fuego" de George R.R. Martin. Ambientada en un mundo
-                medieval ficticio, la historia gira en torno a la lucha por el poder en el continente de Poniente.
-                Varias familias nobles compiten por el codiciado Trono de Hierro, símbolo del poder absoluto. Cada una
-                tiene sus propias ambiciones, secretos y alianzas. La serie nos sumerge en un mundo lleno de intrigas
-                políticas, traiciones, batallas épicas y personajes complejos. Aunque la serie se desarrolla en un mundo
-                de fantasía, aborda temas universales como el poder, la lealtad, el amor y la pérdida. Los personajes
-                deben tomar decisiones difíciles y enfrentar las consecuencias de sus actos, lo que hace que la historia
-                sea aún más cautivadora.</p>
-            <br>
-            <p class="paragraphs"><span class="tabulacion"> </span> Si te gustan las historias llenas de acción,
-                intrigas políticas, personajes complejos y un mundo rico en detalles, Game of Thrones es una serie que
-                no te puedes perder. Además, cuenta con una producción de alta calidad, efectos especiales
-                impresionantes y una banda sonora épica. Si quieres saber más sobre las familias nobles, los dragones,
-                los caminantes blancos y los misterios que esconde este mundo, te recomiendo que empieces a ver Game of
-                Thrones. ¡Prepárate para una experiencia televisiva inolvidable!
-            </p>
+        <!-- Init of 2nd box -->
+        <article>
+            <area class="mid-image mid-image-path-1" id="game-of-thrones"></area>
 
+            <div class="text-box-container">
+                <span class="anchor">GOT</span>
+                <h2 class="main-title">Game of Thrones: Un trono de hierro y muchas intrigas</h2>
+                <span class="author">Creado por David Beniof</span>
+                <p class="paragraphs"><span class="tabulacion"> </span> Game of Thrones es una serie de fantasía épica
+                    basada en la saga de libros "Canción de hielo y fuego" de George R.R. Martin. Ambientada en un mundo
+                    medieval ficticio, la historia gira en torno a la lucha por el poder en el continente de Poniente.
+                    Varias familias nobles compiten por el codiciado Trono de Hierro, símbolo del poder absoluto. Cada una
+                    tiene sus propias ambiciones, secretos y alianzas. La serie nos sumerge en un mundo lleno de intrigas
+                    políticas, traiciones, batallas épicas y personajes complejos. Aunque la serie se desarrolla en un mundo
+                    de fantasía, aborda temas universales como el poder, la lealtad, el amor y la pérdida. Los personajes
+                    deben tomar decisiones difíciles y enfrentar las consecuencias de sus actos, lo que hace que la historia
+                    sea aún más cautivadora.</p>
+                <br>
+                <p class="paragraphs"><span class="tabulacion"> </span> Si te gustan las historias llenas de acción,
+                    intrigas políticas, personajes complejos y un mundo rico en detalles, Game of Thrones es una serie que
+                    no te puedes perder. Además, cuenta con una producción de alta calidad, efectos especiales
+                    impresionantes y una banda sonora épica. Si quieres saber más sobre las familias nobles, los dragones,
+                    los caminantes blancos y los misterios que esconde este mundo, te recomiendo que empieces a ver Game of
+                    Thrones. ¡Prepárate para una experiencia televisiva inolvidable!
+                </p>
 
+                <span class="more-info"><a class="hover-animation" href="./articles/article-game-of-thrones.html">Vea la
+                        historia completa</a></span>
+                <div class="separator-line"></div>
+            </div>
+        
+        </article>
+        <!-- End of 2nd box -->
 
-            <span class="more-info"><a class="more-info-link" href="#">Vea la historia completa</a></span>
-            <div class="separator-line"></div>
-        </div>
-
-
-        <div class="mid-image mid-image-path-5" id="los-simpsons">
-        </div>
-        <div class="text-box-container">
-            <span class="anchor">Los Simpson</span>
-            <h1 class="main-title">Los Simpson: La Familia Amarilla Más Famosa del Mundo</h1>
-            <span class="author">Creado por Matt Groening</span>
-            <p class="paragraphs"><span class="tabulacion"> </span> Los Simpson es una serie de animación estadounidense
-                que ha conquistado a millones de espectadores en todo el mundo desde su estreno en 1989. Con un humor
-                satírico y una visión crítica de la sociedad estadounidense, esta serie ha logrado mantenerse vigente
-                durante décadas, convirtiéndose en un verdadero fenómeno cultural. La serie se centra en las aventuras y
-                desventuras de la familia Simpson, compuesta por Homer, el padre de familia un tanto torpe y amante de
-                la cerveza Duff; Marge, la paciente y comprensiva madre; Bart, el travieso hijo mayor; Lisa, la
-                inteligente y sensible hija del medio; y Maggie, la pequeña bebé que siempre lleva un chupete en la
-                boca. Los Simpson se caracterizan por su humor irreverente, que satiriza la cultura popular, la política
-                y la sociedad en general. A través de sus episodios, la serie aborda temas como la familia, la
-                educación, el trabajo y la religión, siempre con una dosis de ironía y crítica social.</p>
-            <br>
-            <p class="paragraphs"><span class="tabulacion"> </span> Si buscas una serie divertida, inteligente y llena
-                de referencias culturales, Los Simpson es una excelente opción. Con sus personajes entrañables, sus
-                historias ingeniosas y su capacidad para hacernos reír y reflexionar al mismo tiempo, esta serie ha
-                dejado una huella imborrable en la televisión.
-            </p>
-
-
-
-            <span class="more-info"><a class="more-info-link" href="#">Vea la historia completa</a></span>
-            <div class="separator-line"></div>
-        </div>
-
-
-
-        <div class="mid-image mid-image-path-2" id="the-office">
-        </div>
-        <div class="text-box-container">
-            <span class="anchor">The Office</span>
-            <h1 class="main-title">The Office: Una Mirada Cómica al Mundo Corporativo</h1>
-            <span class="author">Creado por Greg Daniels</span>
-            <p class="paragraphs"><span class="tabulacion"> </span>The Office es una serie de televisión estadounidense
-                que nos lleva al día a día de un grupo de empleados en una oficina de papel en Scranton, Pensilvania.
-                Con un formato de falso documental, la serie nos presenta situaciones cómicas y absurdas que se
-                desarrollan en un entorno laboral cotidiano. La serie destaca por sus personajes entrañables y
-                excéntricos, cada uno con su propia personalidad y peculiaridades. Desde el despistado y entusiasta
-                Michael Scott, el gerente regional, hasta los empleados más ambiciosos, los más pesimistas y los más
-                inocentes, cada uno aporta su granito de arena a la dinámica del grupo.
-            </p>
-            <br>
-            <p class="paragraphs"><span class="tabulacion"> </span>
-                El humor de The Office se basa en situaciones cotidianas llevadas al extremo, en los diálogos ingeniosos
-                y en las reacciones exageradas de los personajes. A pesar de su tono cómico, la serie también aborda
-                temas más serios como las relaciones interpersonales, la búsqueda de la felicidad y el significado del
-                trabajo. Si buscas una serie divertida y entretenida, con personajes memorables y situaciones que te
-                harán reír a carcajadas, The Office es una excelente opción. Además, su formato de falso documental te
-                hará sentir como si estuvieras observando la vida real de un grupo de personas.
-            </p>
+        <!-- Init of 3rd box -->
+        <article>
+            <area class="mid-image mid-image-path-5" id="los-simpsons"></area>
+            <div class="text-box-container">
+                <span class="anchor">Los Simpson</span>
+                <h3 class="main-title">Los Simpson: La familia amarilla más famosa del mundo</h3>
+                <span class="author">Creado por Matt Groening</span>
+                <p class="paragraphs"><span class="tabulacion"> </span> Los Simpson es una serie de animación estadounidense
+                    que ha conquistado a millones de espectadores en todo el mundo desde su estreno en 1989. Con un humor
+                    satírico y una visión crítica de la sociedad estadounidense, esta serie ha logrado mantenerse vigente
+                    durante décadas, convirtiéndose en un verdadero fenómeno cultural. La serie se centra en las aventuras y
+                    desventuras de la familia Simpson, compuesta por Homer, el padre de familia un tanto torpe y amante de
+                    la cerveza Duff; Marge, la paciente y comprensiva madre; Bart, el travieso hijo mayor; Lisa, la
+                    inteligente y sensible hija del medio; y Maggie, la pequeña bebé que siempre lleva un chupete en la
+                    boca. Los Simpson se caracterizan por su humor irreverente, que satiriza la cultura popular, la política
+                    y la sociedad en general. A través de sus episodios, la serie aborda temas como la familia, la
+                    educación, el trabajo y la religión, siempre con una dosis de ironía y crítica social.</p>
+                <br>
+                <p class="paragraphs"><span class="tabulacion"> </span> Si buscas una serie divertida, inteligente y llena
+                    de referencias culturales, Los Simpson es una excelente opción. Con sus personajes entrañables, sus
+                    historias ingeniosas y su capacidad para hacernos reír y reflexionar al mismo tiempo, esta serie ha
+                    dejado una huella imborrable en la televisión.
+                </p>
+                <span class="more-info"><a class="hover-animation" href="#">Vea la historia completa</a></span>
+                <div class="separator-line"></div>
+            </div>
+        </article>
+        <!-- End of 3rd box -->
 
 
-            <span class="more-info"><a class="more-info-link" href="#">Vea la historia completa</a></span>
-            <div class="separator-line"></div>
-        </div>
+        <!-- Init of 4th box -->
+        <article>
+            <area class="mid-image mid-image-path-2" id="the-office"></area>
+            <div class="text-box-container">
+                <span class="anchor">The Office</span>
+                <h4 class="main-title">The Office: Una mirada cómica al mundo corporativo</h4>
+                <span class="author">Creado por Greg Daniels</span>
+                <p class="paragraphs"><span class="tabulacion"> </span>The Office es una serie de televisión estadounidense
+                    que nos lleva al día a día de un grupo de empleados en una oficina de papel en Scranton, Pensilvania.
+                    Con un formato de falso documental, la serie nos presenta situaciones cómicas y absurdas que se
+                    desarrollan en un entorno laboral cotidiano. La serie destaca por sus personajes entrañables y
+                    excéntricos, cada uno con su propia personalidad y peculiaridades. Desde el despistado y entusiasta
+                    Michael Scott, el gerente regional, hasta los empleados más ambiciosos, los más pesimistas y los más
+                    inocentes, cada uno aporta su granito de arena a la dinámica del grupo.
+                </p>
+                <br>
+                <p class="paragraphs"><span class="tabulacion"> </span>
+                    El humor de The Office se basa en situaciones cotidianas llevadas al extremo, en los diálogos ingeniosos
+                    y en las reacciones exageradas de los personajes. A pesar de su tono cómico, la serie también aborda
+                    temas más serios como las relaciones interpersonales, la búsqueda de la felicidad y el significado del
+                    trabajo. Si buscas una serie divertida y entretenida, con personajes memorables y situaciones que te
+                    harán reír a carcajadas, The Office es una excelente opción. Además, su formato de falso documental te
+                    hará sentir como si estuvieras observando la vida real de un grupo de personas.
+                </p>
+                <span class="more-info"><a class="hover-animation" href="#">Vea la historia completa</a></span>
+                <div class="separator-line"></div>
+            </div>
+        </article>
+         <!-- End of 4th box -->
+
+         <!-- Init of 5th box -->
+        <article>
+            <area class="mid-image mid-image-path-3" id="breaking-bad"></area>
+            <div class="text-box-container">
+                <span class="anchor">Breaking Bad</span>
+                <h5 class="main-title">Breaking Bad: La transformación de un profesor de química en un señor de la droga</h5>
+                <span class="author">Creado por Vince Gilligan</span>
+                <p class="paragraphs"><span class="tabulacion"> </span>Breaking Bad es una serie dramática estadounidense
+                    que narra la historia de Walter White, un profesor de química de secundaria diagnosticado con cáncer
+                    pulmonar. Ante la inminencia de su muerte y la necesidad de asegurar el futuro financiero de su familia,
+                    Walter toma una decisión radical: comenzar a fabricar y vender metanfetamina. La serie sigue la
+                    transformación de Walter, un hombre aparentemente común y corriente, en un poderoso capo de la droga
+                    conocido como Heisenberg. A medida que se adentra en el peligroso mundo del narcotráfico, Walter debe
+                    enfrentar las consecuencias de sus acciones y lidiar con los desafíos que surgen a su paso.
+                </p>
+                <br>
+                <p class="paragraphs"><span class="tabulacion"> </span>
+                    Más allá de la acción y la violencia, Breaking Bad es un profundo estudio psicológico sobre la
+                    naturaleza humana, la moralidad y las consecuencias de nuestras decisiones. La serie explora temas como
+                    la ambición, el miedo, la lealtad y la pérdida. Si te gustan las series con personajes complejos, giros
+                    argumentales inesperados y una trama que te mantiene al borde del asiento, Breaking Bad es una serie que
+                    no te puedes perder. Además, la serie cuenta con una excelente actuación de Bryan Cranston en el papel
+                    de Walter White, lo que le ha valido numerosos premios y reconocimientos.
+                </p>
 
 
-
-        <div class="mid-image mid-image-path-3" id="breaking-bad">
-        </div>
-        <div class="text-box-container">
-            <span class="anchor">Breaking Bad</span>
-            <h1 class="main-title">Breaking Bad: La Transformación de un Profesor de Química en un Señor de la Droga
-            </h1>
-            <span class="author">Creado por Vince Gilligan</span>
-            <p class="paragraphs"><span class="tabulacion"> </span>Breaking Bad es una serie dramática estadounidense
-                que narra la historia de Walter White, un profesor de química de secundaria diagnosticado con cáncer
-                pulmonar. Ante la inminencia de su muerte y la necesidad de asegurar el futuro financiero de su familia,
-                Walter toma una decisión radical: comenzar a fabricar y vender metanfetamina. La serie sigue la
-                transformación de Walter, un hombre aparentemente común y corriente, en un poderoso capo de la droga
-                conocido como Heisenberg. A medida que se adentra en el peligroso mundo del narcotráfico, Walter debe
-                enfrentar las consecuencias de sus acciones y lidiar con los desafíos que surgen a su paso.
-            </p>
-            <br>
-            <p class="paragraphs"><span class="tabulacion"> </span>
-                Más allá de la acción y la violencia, Breaking Bad es un profundo estudio psicológico sobre la
-                naturaleza humana, la moralidad y las consecuencias de nuestras decisiones. La serie explora temas como
-                la ambición, el miedo, la lealtad y la pérdida. Si te gustan las series con personajes complejos, giros
-                argumentales inesperados y una trama que te mantiene al borde del asiento, Breaking Bad es una serie que
-                no te puedes perder. Además, la serie cuenta con una excelente actuación de Bryan Cranston en el papel
-                de Walter White, lo que le ha valido numerosos premios y reconocimientos.
-            </p>
+                <span class="more-info"><a class="hover-animation" href="#">Vea la historia completa</a></span>
+                <div class="separator-line"></div>
+            </div>
+        </article>
+        <!-- End of 5th box -->
 
 
-            <span class="more-info"><a class="more-info-link" href="#">Vea la historia completa</a></span>
-            <div class="separator-line"></div>
-        </div>
-
-
-
-    </div><!--
+        <footer class="copyright">
+            <span>Page built by <em> <a href="#">Nicolás Gabriel Hruszczak</a></em></span>
+        </footer>
+    </main><!--
         -->
 
 
 
 
-    <!-- Right container 70% viewport width -->
-    <div class="right-container"></div>
+    <!-- Right container 20% viewport width -->
+    <aside class="right-container"></aside>
 
 
 
+ 
 
+    <script src="./JavaScript/app.js"></script>
 </body>
-
 </html>
