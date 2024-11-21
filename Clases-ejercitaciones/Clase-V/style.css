@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.back-home-cta
+{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.back-home
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #333022;
+    border-radius: 50px;
+}
+
+.green-bg-nav{
+    margin: 0;
+    background-color: #9dd983;
+    height: 50px;
+    text-align: left;
+}
+.nav-links{
+    display: inline-block;
+    padding: 15px 0;
+}
+.button{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #4e9aae;
+    border-radius: 15px;
+}
+
+.text-container{   
+    text-align: center;
+}
+
+.titulo-paleta-colores{
+    text-align: center;
+    color: #6d955b;
+}
+
+table{
+    border: solid 1;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(85, 104, 82);
+    margin: 20px auto 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.col-1{
+    background-color: #66a4ff;
+}
+
+.col-2{
+    background-color: #83bdff;
+}
+
+.col-3{
+    background-color: #9dd6ff;
+}
+
+.col-4{
+    background-color: #b8efff;
+}
+
+.col-5{
+    background-color: #3f8cfd;
+}
+
+.col-6{
+    background-color: #1376f0;
+}
+
+.col-7{
+    background-color: #0862d9;
+}
+
+.col-8{
+    background-color: #084ec0;
+}
+
+.music-container{
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
+    }
+
+.music-list{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

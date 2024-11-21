@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    color: #464643;
+}
+
+.back-home-cta
+{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.back-home{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #333022;
+    border-radius: 50px;
+}

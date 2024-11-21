@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Landing/estilos globales.css">
+    <title>Ejercitación clase IV - Tabla como layout de página</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    body{
+        font-family: "Roboto", sans-serif;
+    }
+
+    .back-home-cta
+    {
+        text-align: center;
+        margin: 15px 0px;
+    }
+
+    .back-home
+    {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color: #333022;
+        border-radius: 50px;
+    }
+
+
+</style>
+<body>
+    <nav class="nav2">
+        <img class="nav-icon" src="../Landing/img/gears-solid.svg" alt="#">
+        <ul>
+            <li>
+                <a href="../Landing/Landing.html">Home</a>
+            </li>
+            <li>
+                <a href="../Clase-I/Identikit.html">Clase I</a>
+            </li>
+            <li>
+                <a href="../Clase-II/Tabla-de-tipografias.html">Clase II</a>
+            </li>
+            <li>
+                <a href="../Clase-III/links-internos.html">Clase III</a>
+            </li>
+            <li>
+                <a href="../Clase-IV/Clase-4.html">Clase IV</a>
+            </li>
+            <li>
+                <a href="../Clase-IV-bis/clase-IV-bis.html">Clase IV-bis</a>
+            </li>
+            <li>
+                <a href="../Clase-V/clase-v.html">Clase V</a>
+            </li>
+            <li >
+                <a href="../Clase-VI-Trivia/clase-VI.html">Clase VI - Trivia</a>
+            </li>
+            <li >
+                <a href="../Clase-VII/clase-VII.html">Clase VII</a>
+            </li>
+            <li >
+                <a href="../Clase-VI/position/position.html">Clase VII</a>
+            </li>
+        </ul>
+</nav>
+    
+    <div style="text-align: center; margin-top: 50px;">       
+        <p>Ejercitación vista en clase, demostración de como se usaba anteriormente las tablas para dar estructura a los sitios.</p>
+        <h1>Wireframe</h1>
+    </div>
+    
+    <table style="height: 600px; width: 80%; margin: 20px auto;" border="1">
+        <tr style="background-color: rgb(95, 225, 239);"> <!-- Fila 1 -->
+            <th>Home</th>
+            <th>Iconos</th>
+            <th>Links</th>
+            <th>Imagen</th>
+            <th>Logo</th>
+        </tr>
+        <tr> <!-- Fila 2 Main nav -->
+            <td colspan="5" style="text-align: center;">Navegación principal</td>
+        </tr>
+        <tr> <!-- Fila 3 -->
+            <td id="sidebar" colspan="1">Sidebar</td>
+            <td colspan="4" style="text-align: center;">Header</td>
+        </tr>
+        <tr> <!-- Fila 3 -->
+            <td id="sidebar" colspan="1">Sidebar</td>
+            <td colspan="5"  style="text-align: center;">
+                <p>Section</p>
+            </td>
+        </tr>
+        <tr> <!-- Fila 3 -->
+            <td id="sidebar" colspan="1">Sidebar</td>
+            <td colspan="5" style="text-align: center;">Main content</td>
+        </tr>
+        <tr> <!-- Fila 3 -->
+            <td id="sidebar" colspan="1">Sidebar</td>
+            <td colspan="5" style="text-align: center;">Main content</td>
+        </tr>
+        <tr> <!-- Fila 3 -->
+            <td id="sidebar" colspan="1">Sidebar</td>
+            <td colspan="5" style="text-align: center;">Main content</td>
+        </tr>
+        <tr > <!-- Fila 2 -->
+            <td colspan="5" style="text-align: center;">Footer</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: center;">
+                <footer style="text-align: center;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </footer>
+            </td>
+        </tr>
+    </table>
+    <p class="back-home-cta">
+        <a class="back-home" href="#inicio">Volver al inicio</a>
+    </p>
+</body>
+</html>

@@ -24,7 +24,7 @@
 .contact-information {
     background-color: rgba(112, 80, 80, 0.637);
     width: 70%;
-    height: 18%;
+    height: 20%;
     border-radius: 35px;
     border: 1px solid rgb(128, 83, 0);
     text-align: center;
@@ -87,3 +87,44 @@ ul li {
     left: 18%;
 }
 
+
+
+
+
+/* Media queries */
+
+@media (max-width: 550px) {
+
+    .main-container {
+        background-image: url("../assets/bg-abstract-tablet.jpeg");
+
+    }
+
+    .contact-information {
+        width: 80%;
+        height: 22%;
+    }
+
+    .contact-information h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-information p {
+        font-size: 0.8rem;
+    }
+
+
+    .row {
+        width: 80%;
+        height: 7%;
+    }
+
+    .left-icon-row {
+        right: 15%;
+    }
+    
+    .right-icon-row{
+        left: 15%;
+    }
+    
+}
