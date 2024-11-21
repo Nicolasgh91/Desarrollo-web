@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-container {
+    background-image: url("../assets/bg-abstract-desktop.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-information {
+    background-color: rgba(112, 80, 80, 0.637);
+    width: 70%;
+    height: 18%;
+    border-radius: 35px;
+    border: 1px solid rgb(128, 83, 0);
+    text-align: center;
+}
+
+.contact-information h1 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+
+.contact-information p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 5px 0 0;
+}
+
+
+
+.row {
+    background-color: rgba(112, 80, 80, 0.637);
+    border: 1px solid rgb(128, 83, 0);
+    margin: 20px auto;
+    width: 70%;
+    height: 5%;
+    border-radius: 35px;
+    transition: ease-in 0.3s;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px #ffffff;
+    left: -5px;
+    top: -5px;
+    color: white;
+}
+
+
+.left-icon-row {
+    position: relative;
+    right: 18%;
+    transition: transform 0.2s;
+}
+
+.left-icon-row:hover {
+    transform: rotate(-45deg);
+}
+
+.right-icon-row{
+    position: relative;
+    left: 18%;
+}
+
