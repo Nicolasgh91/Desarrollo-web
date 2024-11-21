@@ -1,0 +1,259 @@
+/* Barra de Navegación 1: Subrayado en Hover */
+nav {
+    margin-top: 10px;
+}
+
+.nav1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.nav1 ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav1 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 247, 95);
+    text-decoration: none;
+}
+
+.nav1 ul li a:hover {
+    border-bottom: 2px solid #f5008f;
+}
+
+/* Barra de Navegación 2: Fondo con Color de Gradiente */
+.nav2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #0a25be, #51b7f7);
+}
+
+.nav2 ul li {
+    display: inline-block;
+}
+
+.nav2 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav2 ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Barra de Navegación 3: Botones con Efecto de Desplazamiento */
+.nav3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+}
+
+.nav3 ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav3 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.nav3 ul li a:hover {
+    transform: translateY(-5px);
+    color:rgba(253, 0, 0, 0.89)
+}
+
+/* Barra de Navegación 4: Borde Inferior en Hover */
+.nav4 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3700ff;
+}
+
+.nav4 ul li {
+    display: inline-block;
+}
+
+.nav4 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(238, 255, 0);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav4 ul li a:hover {
+    border-bottom: 3px solid rgb(255, 238, 0);
+}
+
+/* Barra de Navegación 5: Estilo de Caja */
+.nav5 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #555;
+}
+
+.nav5 ul li {
+    display: inline-block;
+}
+
+.nav5 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+.nav5 ul li a:hover {
+    background-color: #f8a8ff;
+    color: #555;
+}
+
+/* Barra de Navegación 6: Fondo con Imagen */
+.nav6 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.nav6 ul li {
+    display: inline-block;
+}
+
+.nav6 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav6 ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Barra de Navegación 7: Con Borde Superior */
+.nav7 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #666;
+}
+
+.nav7 ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav7 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    transition: border-top 0.3s ease;
+}
+
+.nav7 ul li a:hover {
+    border-top: 3px solid #0f0;
+}
+
+/* Barra de Navegación 8: Estilo de Tarjeta */
+.nav8 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #777;
+}
+
+.nav8 ul li {
+    display: inline-block;
+}
+
+.nav8 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav8 ul li a:hover {
+    background-color: #fcba06;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de Navegación 9: Animación de Desvanecimiento */
+.nav9 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #888;
+}
+
+.nav9 ul li {
+    display: inline-block;
+}
+
+.nav9 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav9 ul li a:hover {
+    opacity: 0.7;
+}
+
+/* Barra de Navegación 10: Menú Vertical */
+.nav10 {
+    background-color: #999;
+    width: 200px;
+    height: 100vh;
+}
+
+.nav10 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav10 ul li {
+    margin: 0;
+}
+
+.nav10 ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+    transition: background-color 0.3s ease;
+}
+
+.nav10 ul li a:hover {
+    background-color: #333;
+}
