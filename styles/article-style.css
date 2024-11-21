@@ -81,7 +81,7 @@ h2{
 
 section p{
     margin: 10px 0;
-    color: #000;
+    color: var(--paragraphs-font);
 }
 
 .next-article{
