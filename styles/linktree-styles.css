@@ -24,10 +24,16 @@
 .contact-information {
     background-color: rgba(112, 80, 80, 0.637);
     width: 70%;
-    height: 20%;
+    height: 18%;
     border-radius: 35px;
     border: 1px solid rgb(128, 83, 0);
     text-align: center;
+    transition:  .2s ease-in;
+}
+
+.contact-information:hover{
+    background-color: rgba(78, 57, 57, 0.637);
+    cursor: pointer;
 }
 
 .contact-information h1 {
@@ -102,7 +108,7 @@ ul li {
 
     .contact-information {
         width: 80%;
-        height: 22%;
+        height: 15%;
     }
 
     .contact-information h1 {

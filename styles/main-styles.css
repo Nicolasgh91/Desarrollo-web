@@ -130,6 +130,7 @@ p{
 .anchor{
     margin: 20px 0;
     font-weight: 400;
+    color: var(--paragraphs-font);
 }
 
 .main-title{
@@ -151,6 +152,7 @@ p{
     text-align: center;
     margin: 20px 0;
     font-weight: 600;
+    color: var(--paragraphs-font);
 }
 
 .more-info{
@@ -161,7 +163,7 @@ p{
 
 .more-info a{
     text-decoration: none;
-    color: var(--main-font-color);
+    color: var(--paragraphs-font);
     font-family: "Kanit", sans-serif;
     font-weight: 600;
     font-style: normal;
